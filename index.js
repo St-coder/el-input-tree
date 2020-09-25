@@ -1,3 +1,3 @@
-import straightTree from './src/straightTree';
+import ElInputTree from './src/main/ElInputTree';
 
-export default straightTree;
+export default ElInputTree;
