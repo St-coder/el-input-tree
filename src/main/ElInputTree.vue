@@ -4,12 +4,12 @@
     width="200"
     trigger="click"
     transition="el-zoom-in-top"
-    class="ips-org-tree"
-    popper-class="ips-org-tree__popper"
+    class="el-input-tree"
+    popper-class="el-input-tree__popper"
     v-model="visible"
     @hide="handleHide"
   >
-    <div class="ips-org-tree__tree-container" ref="tree-container">
+    <div class="el-input-tree__tree-container" ref="tree-container">
       <el-tree
         ref="tree"
         :data="data"
@@ -28,8 +28,8 @@
       slot="reference"
       v-model="name"
       :clearable="true"
-      class="ips-org-tree__input"
-      :class="{'ips-org-tree_arrow-down':!visible,'ips-org-tree_arrow-up':visible}"
+      class="el-input-tree__input"
+      :class="{'el-input-tree_arrow-down':!visible,'el-input-tree_arrow-up':visible}"
       :placeholder="placeholder"
       suffix-icon="el-icon-arrow-up"
       @change="handleChange"
@@ -147,29 +147,29 @@ export default {
 </script>
 
 <style lang="scss">
-.ips-org-tree__popper {
+.el-input-tree__popper {
   height: 200px;
   overflow: auto;
   resize: both;
 }
 
-.ips-org-tree_arrow-down {
+.el-input-tree_arrow-down {
   .el-input__icon {
     transform: rotateZ(180deg);
   }
 }
 
-.ips-org-tree_arrow-up {
+.el-input-tree_arrow-up {
   .el-input__icon {
     transform: rotateZ(0deg);
   }
 }
 
-.ips-org-tree__tree-container {
+.el-input-tree__tree-container {
   overflow-y: auto !important;
 }
 
-.ips-org-tree__input {
+.el-input-tree__input {
   outline: 0 !important;
 
   &:focus {
