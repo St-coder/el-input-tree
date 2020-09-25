@@ -1,6 +1,6 @@
 {
   "name": "el-input-tree",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "base on vue and element-ui",
   "main": "index.js",
   "scripts": {
