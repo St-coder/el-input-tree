@@ -14,7 +14,7 @@
   ],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "element-ui": "^2.13.2",
     "vue": "^2.6.12"
   }
